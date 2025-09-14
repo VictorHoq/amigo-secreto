@@ -2,6 +2,9 @@
 
 Aplicación web simple para gestionar una lista de amigos y sortear aleatoriamente un "amigo secreto". Pensada para practicar lógica de programación en JavaScript manipulando el DOM.
 
+## Demo (GitHub Pages)
+https://victorhoq.github.io/amigo-secreto/
+
 ## Características
 - Agregar nombres a una lista con validación.
 - Visualizar la lista actualizada sin duplicados en el render.
