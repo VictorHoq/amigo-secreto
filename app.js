@@ -13,11 +13,7 @@ const resultadoEl = document.getElementById("resultado");
 function renderLista() {
   if (!listaAmigosEl) return;
   listaAmigosEl.innerHTML = "";
-  amigos.forEach((nombre) => {
-    const li = document.createElement("li");
-    li.textContent = nombre;
-    listaAmigosEl.appendChild(li);
-  });
+  for (let i = 0; i < amigos.length; i++) { const li = document.createElement("li"); li.textContent = amigos[i]; listaAmigosEl.appendChild(li); }
 }
 
 // Limpia el resultado mostrado
