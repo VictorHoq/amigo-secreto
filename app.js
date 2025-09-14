@@ -54,11 +54,7 @@ function sortearAmigo() {
   const indice = Math.floor(Math.random() * amigos.length);
   const seleccionado = amigos[indice];
 
-  if (resultadoEl) {
-    const li = document.createElement("li");
-    li.textContent = `Amigo secreto: ${seleccionado}`;
-    resultadoEl.appendChild(li);
-  }
+  if (resultadoEl) { resultadoEl.innerHTML = `<li>Amigo secreto: ${seleccionado}</li>`; }
 }
 
 // Permite agregar con Enter desde el input
