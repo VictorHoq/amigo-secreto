@@ -2,7 +2,7 @@
 // Lógica del juego: Amigo Secreto
 
 // Estado: lista de amigos ingresados
-const amigos = [];
+let amigos = [];
 
 // Referencias a elementos del DOM
 const inputAmigo = document.getElementById("amigo");
@@ -31,7 +31,7 @@ function agregarAmigo() {
   const nombre = (inputAmigo?.value || "").trim();
 
   if (!nombre) {
-    alert("Por favor, ingresa un nombre válido.");
+    alert("Por favor, inserte un nombre.");
     inputAmigo?.focus();
     return;
   }
